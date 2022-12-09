@@ -1,3 +1,9 @@
+import React from "react";
+// import {ThemeProvider, theme, CSSReset} from "@chakra-ui/core";
+// import Center from "../src/components/Center/Center";
+import {addDecorator} from "@storybook/react";
+import {Box, ChakraProvider} from '@chakra-ui/react'
+
 export const parameters = {
     actions: {argTypesRegex: "^on[A-Z].*"},
     controls: {
@@ -12,3 +18,10 @@ export const parameters = {
     },
 
 }
+
+// addDecorator(story =><Center>{story()}</Center>)
+// addDecorator(story =><ThemeProvider theme={theme} ><CSSReset/>{story()}</ThemeProvider>)
+addDecorator(story =>    <ChakraProvider resetCSS={true}  ><Box m="4">{story()}</Box></ChakraProvider>)
+
+
+//todo React Storybook Tutorial - 6.2 - Decorators and Theming in V6

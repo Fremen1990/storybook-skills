@@ -10,7 +10,7 @@
      cursor: pointer;
  }
 
- .primary {background-color: #008CBA}
- .secondary {background-color: #e7e7e7}
- .success {background-color: #4CAF50}
- .danger {background-color: #f44336}
+ .primary {background: #008CBA}
+ .secondary {background: #e7e7e7}
+ .success {background: #4CAF50}
+ .danger {background: #f44336}
